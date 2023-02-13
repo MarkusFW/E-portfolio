@@ -1,0 +1,115 @@
+@media (max-width: 1980px) {
+  .title--animation {
+    background-size: 700px !important;
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0em 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeM6lC0uDtEfmBXsNjtWeoz9H8Ki4UWpLepA&usqp=CAU)
+      repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 25s linear infinite alternate-reverse;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .title--animation {
+    background-size: 700px !important;
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0em 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeM6lC0uDtEfmBXsNjtWeoz9H8Ki4UWpLepA&usqp=CAU)
+      repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 30s linear infinite alternate-reverse;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Animate Background Image */ /*# sourceMappingURL=styles.css.map */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .title--animation {
+    -webkit-animation: aitf 40s linear infinite alternate-reverse ;
+  }
+
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media (max-width: 432px) {
+    .title--animation {
+      -webkit-animation: aitf 70s linear infinite alternate-reverse ;
+    }
+  
+    @-webkit-keyframes aitf {
+      0% {
+        background-position: 0% 100%;
+      }
+      100% {
+      background-position: 0% 50%;
+        
+      }
+    }
+}
+
+}
+
+
+@media (max-width: 422px) {
+  .title--animation {
+    -webkit-animation: aitf 70s linear infinite alternate-reverse ;
+  }
+
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0 500%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}
+

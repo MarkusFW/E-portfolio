@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markus Furnes-Wilkens</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("4FYNgiYYfhYN5X1Wm");
+      })();
+    </script>
+  </head>
+
+  <body class="dark-theme" onmousemove="moveBackground(event)">
+    <section id="landing-page">
+      <nav>
+        <figure id="personal__figure">
+          <img
+            id="personal__logo"
+            src="/assets/me looking fancy AF.jpg"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title title--animation blue">I'm Markus.</h1>
+          <p class="header__para">
+            I'm a 20 year-old
+            <b class="blue"> Frontend Software Engineer </b> with a strong
+            passion for building web applications with great user experiences.
+            <br />
+            Here's a bit more
+            <b class="blue click" onclick="toggleModal()">about me.</b>
+          </p>
+          <div class="social__list">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/markus-furnes-wilkens-4a2b4123b/"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/MarkusFW"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="/assets/Resumë (5).pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 20 year-old Norwegian
+            <b class="blue"> frontend software engineer </b>. I love to build
+            <b class="blue">beautiful</b>, <b class="blue">functional</b> and
+            <b class="blue">responsive</b> websites.
+            <br />
+            I am currently <b class="blue"> open to new opportunities. </b>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png"
+                alt=""
+              />
+              <span class="language__name">Firebase</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'd love to hear from you
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking with you soon.
+          </div>
+        </div>
+      </div>
+      <img src="/assets/semi circle.svg" class="shape shape--0" />
+      <img src="/assets/circle.svg" class="shape shape--1" />
+      <img src="/assets/squiggly.svg" class="shape shape--2" />
+      <img src="/assets/circle.svg" class="shape shape--3" />
+      <img src="/assets/triangle.svg" class="shape shape--4" />
+      <img src="/assets/circle.svg" class="shape shape--5" />
+      <img src="/assets/squiggly.svg" class="shape shape--6" />
+      <img src="/assets/circle.svg" class="shape shape--7" />
+      <img src="/assets/semi circle.svg" class="shape shape--8" />
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="blue">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/gmail5.PNG" class="project__img" alt="" />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Gmail Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    Redux, Html, CSS, JavaScript, React, Firebase, Material UI
+                  </h4>
+                  <p class="project__description--para">
+                    • Integrated Gmail’s UI/UX using
+                    <b> EDUX.JS, MATERIAL UI, FIREBASE, CSS3</b>
+                    <br />
+                    • Created a sign in functionality using
+                    <b>FIREBASE AUTHENTICATION</b>
+                    <br />
+                    • Implemented functionality to allow users
+                    <b>SEND MESSAGES</b>
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="#"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://clone-project-dffda.web.app/"
+                      class="project__description--link"
+                    >
+                      <p>
+                        Click <b class="blue">here</b> to see the project! 😊
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/NFT.PNG" class="project__img" alt="" />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Ultraverse NFT World
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    AOS-library, KEEN-SLIDER-library, Html, CSS, JavaScript,
+                    React
+                  </h4>
+                  <p class="project__description--para">
+                    • Created a fully dynamic NFT app using
+                    <b> REACT, CSS ANIMATIONS & GIT</b>
+                    <br />
+                    • <b>FETCHED</b> a dynamic <b>NFT API</b> using axios and
+                    implemented page
+                    <b>ROUTING</b>
+                    <br />
+                    • Used <b> REACT KEEN-SLIDER</b> for beautiful carousels
+                    across the web app
+                    <br />
+                    • Implemented css animations from
+                    <b>ANIMATE ON SCROLL LIBRARY</b>
+                  </p>
+
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="#"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://markus-internship-nft.web.app/"
+                      class="project__description--link"
+                    >
+                      <p>
+                        Click <b class="blue">here</b> to see the project! 😊
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/Twitter.PNG" class="project__img" alt="" />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Twitter Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    REACT, JavaScript, CSS, Html, Material UI, Firebase
+                    firestore,
+                  </h4>
+                  <p class="project__description--para">
+                    • Developed a social media app using
+                    <b>REACT.JS, CSS, MATERIAL UI, FIREBASE FIRESTORE</b>
+                    <br />
+                    • Different icons in this twitter clone using
+                    <b>MATERIAL UI</b>
+                    <br />
+                    • Making posts and posting images using
+                    <b>CLOUD FIRESTORE</b>
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="#"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://twitter-clone-app-1cd52.web.app/
+                    "
+                      class="project__description--link"
+                    >
+                      <p>
+                        Click <b class="blue">here</b> to see the project! 😊
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/Library.PNG" class="project__img" alt="" />
+                <div class="project__wrapper--background"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    E-Commerce Book Store
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    • I created a <b>FULLY RESPONSIVE</b> online book-store
+                    using HTML, CSS, JavaScript and React
+                    <br />
+                    • <b> FETCHED DATA </b> and displayed the data
+                    <b>DYNAMICALLY.</b>
+                    <br />
+                    • This project includes many features such as
+                    <b> CHECKOUT, SORTING</b>, etc.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="#"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://library-project-963ac.web.app/"
+                      class="project__description--link"
+                    >
+                      <p>
+                        Click <b class="blue">here</b> to see the project! 😊
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#">
+            <figure id="personal__figure" class="personal__figure--footer">
+              <img
+                id="personal__logo"
+                src="/assets/me looking fancy AF.jpg"
+                alt=""
+              />
+            </figure>
+          </a>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/MarkusFW"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/markus-furnes-wilkens-4a2b4123b/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Email
+            </a>
+            <a
+              href="/assets/Resumë (5).pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright © 2022 Markus Furnes-Wilkens
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
